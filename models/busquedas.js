@@ -106,7 +106,7 @@ class Busquedas{
         if(this.historial.includes(lugar)){
             return;
         }
-        //hace un slice(0,4) para mostrar solo las ultimas 5 busquedas en el historial
+        //hacemos un slice(0,4) para mostrar solo las ultimas 5 busquedas en el historial
         this.historial = this.historial.slice(0,4)
         //cada nuevo lugar buscado se ubicara en lka primera posicion [0]
         this.historial.unshift(lugar);
