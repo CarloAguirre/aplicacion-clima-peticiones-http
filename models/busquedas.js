@@ -108,9 +108,9 @@ class Busquedas{
         }
         //hacemos un slice(0,4) para mostrar solo las ultimas 5 busquedas en el historial
         this.historial = this.historial.slice(0,4)
-        //cada nuevo lugar buscado se ubicara en lka primera posicion [0]
+        //cada nuevo lugar buscado se ubicara en la primera posicion [0]
         this.historial.unshift(lugar);
-        //guardaremos el historial en el la data.json
+        //guardaremos el historial en el data.json
         this.guardarDB(this.historial)
     };
 };
